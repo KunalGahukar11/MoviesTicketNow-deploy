@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected {
+  background-color: rgb(56, 243, 56);
+  color: black;
+  height: 20px;
+  width: 20px;
+  border-color: rgb(45, 245, 45);
+  border-radius: 0.125rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.booked {
+  opacity: 0.4;
+  background-color: rgb(209 213 219);
+  height: 20px;
+  width: 20px;
+  border-color: rgb(156 163 175);
+  border-radius: 0.125rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 1rem;
+  cursor: not-allowed;
+}
+
+.default-seats {
+  background-color: rgb(209 213 219);
+  height: 20px;
+  width: 20px;
+  border-color: rgb(156 163 175);
+  border-radius: 0.125rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+}
