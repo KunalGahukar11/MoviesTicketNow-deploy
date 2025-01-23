@@ -1,6 +1,19 @@
 const express = require("express");
+const path = require("path");
+const cors = require("cors");
 const app = express();
 require("dotenv").config(); // loading env variables
+const client_build_path = path.join(__dirname, "../Client/dist");
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: ["GET", "PUT", "POST", "DELETE", "PATCH"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
+app.use(express.static(client_build_path));
 
 const userRouter = require("./Routes/userRoutes");
 const dbConnection = require("./Config/dbConfig");
