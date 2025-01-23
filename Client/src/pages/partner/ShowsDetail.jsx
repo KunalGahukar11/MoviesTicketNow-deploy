@@ -1,7 +1,7 @@
 import { DeleteOutlined, EditOutlined, PlusCircleOutlined } from '@ant-design/icons'
 import { Divider, Modal, Button, message, Table, Spin } from 'antd'
 import React, { useCallback, useEffect, useState } from 'react'
-import ShowsModal from './showsModal';
+import ShowsModal from './ShowsModal';
 import DeleteModal from '../../components/DeleteModal/DeleteModal';
 import { useDispatch, useSelector } from 'react-redux';
 import { hideLoader, showLoader } from '../../redux/slices/loaderSlice';

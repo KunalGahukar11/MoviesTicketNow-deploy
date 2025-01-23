@@ -8,7 +8,6 @@ import { hideLoader, showLoader } from '../../redux/slices/loaderSlice';
 const ShowsModal = ({ isAddShowModalOpen, setIsAddShowModalOpen, formType, selectedTheatre, getShows, selectedShow }) => {
     const [form] = Form.useForm();
     const dispatch = useDispatch();
-    const [movieNames, setMovieNames] = useState([]);
     const [allMovies, setAllMovies] = useState([]);
 
     const handleClose = () => {
